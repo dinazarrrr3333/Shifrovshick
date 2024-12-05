@@ -1,15 +1,14 @@
 
-messenge = input("Введите сообщение: ")
+messenge = input("Введите сообщение: ").lower()
 chipher = []
 result = ""
 
 alphabet_ru = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
 alphabet_en = "abcdefghijklmnopqrstuvwxyz"
-print(messenge.lower())
 step = int(input("Введите шаг сдвига: "))
-lang = (input("""Выберите язык: RU/EN
+lang = input("""Выберите язык: RU/EN
 Select a language: RU/EN
-                 """))
+                 """)
 if lang == "RU":
     lang = alphabet_ru  
 elif lang == "EN":
